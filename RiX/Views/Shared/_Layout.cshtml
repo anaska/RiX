@@ -58,7 +58,8 @@
                     <a href="http://localhost/rix/index.html">home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="http://localhost/rix/search.html">search</a>
+                    @*<a href="http://localhost/rix/search.html">search</a>*@
+                    @Html.ActionLink("Search", "Search", "Search", new { area = "" }, null)
                 </li>
                 <li class="menu-item">
                     <a href="http://localhost/rix/log-in.html">log in</a>
