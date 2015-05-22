@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿@*<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -37,5 +37,109 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+</body>
+</html>*@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rix : Resource Interactive eXplorer </title>
+    <link rel="stylesheet" type="text/css" href="~/Content/home.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    @RenderBody()
+    <div class="header">
+        <div class="site-center">
+            <h1 class="header-title">
+                <a href="http://localhost/rix/index.html">RiX</a>
+            </h1>
+            <ul class="menu-wrapper">
+                <li class="menu-item menu-item--active">
+                    <a href="http://localhost/rix/index.html">home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="http://localhost/rix/search.html">search</a>
+                </li>
+                <li class="menu-item">
+                    <a href="http://localhost/rix/log-in.html">log in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="presentation-section" style="background-image:url('/Content/img/section_one.jpg')">
+        <h1 class="presentation-section-text presentation-section-text--title">
+            Github-ing your knowledge !
+        </h1>
+        <h2 class="presentation-section-text presentation-section-text--description">... we FORK resources for you from GitHub!</h2>
+    </div>
+    <div class="presentation-section presentation-section--right" style="background-image:url('/Content/img/vimeo.png')">
+        <h1 class="presentation-section-text
+		presentation-section-text--right  presentation-section-text--title">
+            Vimeo-ing your brains !
+        </h1>
+        <h2 class="presentation-section-text presentation-section-text--right presentation-section-text--description">... we fill your heart with joy!</h2>
+    </div>
+    <div class="presentation-section" style="background-image:url('/Content/img/techcrunch.png')">
+        <h1 class="presentation-section-text presentation-section-text--title">
+            Getting the latest from tech right to you !
+        </h1>
+        <h2 class="presentation-section-text presentation-section-text--description">... best written tech articles on the net, with love, from techcrunch.com</h2>
+    </div>
+    <div class="presentation-section presentation-section--right" style="background-image:url('/Content/img/visual.jpg')">
+        <h1 class="presentation-section-text
+		presentation-section-text--right  presentation-section-text--title">
+            And many more !
+        </h1>
+        <h2 class="presentation-section-text presentation-section-text--right presentation-section-text--description">... we try to please even the most grumpy!</h2>
+    </div>
+    <div class="footer">
+        <div class="site-center">
+            <ul class="footer-column">
+                <li class="column-item column-item--hero">SITE</li>
+                <li class="column-item">
+                    <a href="#">
+                        HOME
+                    </a>
+                </li>
+                <li class="column-item">
+                    <a href="#">
+                        SEARCH
+                    </a>
+                </li>
+                <li class="column-item">
+                    <a href="#">
+                        LOG IN
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-column">
+                <li class="column-item column-item--hero">ABOUT</li>
+                <li class="column-item">
+                    <a href="#">
+                        API
+                    </a>
+                </li>
+                <li class="column-item">
+                    <a href="#">
+                        THE TEAM
+                    </a>
+                </li>
+                <li class="column-item">
+                    <a href="#">
+                        WHERE WE PULL FROM
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-column">
+                <li class="column-item column-item--hero">SOCIAL</li>
+                <li class="column-item">
+                    <a href="#">FACEBOOK</a>
+                </li>
+                <li class="column-item">
+                    <a href="#">TWITTER</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

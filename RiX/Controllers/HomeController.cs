@@ -14,5 +14,20 @@ namespace RiX.Controllers
 
             return View();
         }
+
+        public ActionResult Search()
+        {
+            return View();
+        }
+
+        public ActionResult SignUp()
+        {
+            return View();
+        }
+
+        public ActionResult SignOut()
+        {
+            return View();
+        }
     }
 }
