@@ -49,6 +49,7 @@
     <link rel="stylesheet" type="text/css" href="~/Content/search.css">
     <link rel="stylesheet" type="text/css" href="~/Content/signup.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
     <div class="header">
@@ -64,7 +65,7 @@
                     @Html.ActionLink("Search", "Search", "Home", new { area = "" }, null)
                 </li>
                 <li class="menu-item">                    
-                    @Html.ActionLink("Log In", "Login", "Home", new { area = "" }, null)
+                    @Html.ActionLink("Log In", "Login", "Account", new { area = "" }, null)
                 </li>
             </ul>
         </div>
