@@ -44,30 +44,37 @@
 <head>
     <title>Rix : Resource Interactive eXplorer </title>
     <link rel="stylesheet" type="text/css" href="~/Content/home.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/login.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/porfile.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/search.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/signup.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    @RenderBody()
     <div class="header">
         <div class="site-center">
             <h1 class="header-title">
-                <a href="http://localhost/rix/index.html">RiX</a>
+                @*<a href="http://localhost/rix/index.html">RiX</a>*@
+                @Html.ActionLink("RiX", "Index", "Home", new { area = "" }, null)
             </h1>
             <ul class="menu-wrapper">
                 <li class="menu-item menu-item--active">
-                    <a href="http://localhost/rix/index.html">home</a>
+                   @* <a href="http://localhost/rix/index.html">home</a>*@
+                    @Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)
                 </li>
                 <li class="menu-item">
                     @*<a href="http://localhost/rix/search.html">search</a>*@
-                    @Html.ActionLink("Search", "Search", "Search", new { area = "" }, null)
+                    @Html.ActionLink("Search", "Search", "Home", new { area = "" }, null)
                 </li>
                 <li class="menu-item">
-                    <a href="http://localhost/rix/log-in.html">log in</a>
+                    @*<a href="http://localhost/rix/log-in.html">log in</a>*@
+                    @Html.ActionLink("Log In", "Login", "Home", new { area = "" }, null)
                 </li>
             </ul>
         </div>
     </div>
-    <div class="presentation-section" style="background-image:url('/Content/img/section_one.jpg')">
+    @RenderBody()
+    <!--<div class="presentation-section" style="background-image:url('/Content/img/section_one.jpg')">
         <h1 class="presentation-section-text presentation-section-text--title">
             Github-ing your knowledge !
         </h1>
@@ -92,7 +99,7 @@
             And many more !
         </h1>
         <h2 class="presentation-section-text presentation-section-text--right presentation-section-text--description">... we try to please even the most grumpy!</h2>
-    </div>
+    </div>-->
     <div class="footer">
         <div class="site-center">
             <ul class="footer-column">
