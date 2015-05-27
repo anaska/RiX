@@ -97,3 +97,45 @@
 	color: white;
 	border-color: transparent;
 }
+
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat';
+}
+
+.row {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.row input[type='submit'] {
+    width: 100px;
+    padding: 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.row input[type='submit']:hover {
+
+}
+.row #RememberMe {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-bottom: 30px;
+}
+
+.col-md-10 {
+    margin-top: 10px;   
+}
+
+.register-message a {
+    color: black;
+    text-decoration: none;
+}
