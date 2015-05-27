@@ -7,7 +7,29 @@
 .search {
 	text-align: center
 }
+.search-buttons-container {
+    width: 100%;
+    margin-top: 20px;
+}
+.search .search-type {
+    width: auto;
+    display: inline;
+    height: 15px;
+    margin-top: 0px;
+    vertical-align: middle; 
+}
 
+.search p {
+    display: inline;
+    color: white;
+    font-family: 'Montserrat';
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.search p:last-child {
+    margin-right: 0px;
+}
 .search input {
 	width: 50%;
 	height: 30px;
